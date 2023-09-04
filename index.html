@@ -1,15 +1,39 @@
-<html>
-  <body>
-    <h1>Sumador</h1>
-    <form id="sumar-form">
-      <label for="primer-numero">Primer número:</label>
-      <input type="number" id="primer-numero" />
-      <label for="segundo-numero">Segundo número:</label>
-      <input type="number" id="segundo-numero" />
-      <input type="submit" value="Sumar" id="sumar-button" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autitos</title>
+</head>
+    <body>
+    <h1>AUTITOS🚗</h1>
+    <form id="autito-form">
+      <div>
+        <p>Ingrese las instrucciones de la sigueinte manera<br>
+           Tamaño de la matriz / Posicion Inicial en X, Posicion Inicial Y y la Dirección / Comandos 
+        <br>
+           <b>I</b> El auto gira hacia la izquierda
+        <br>
+           <b>D</b> El auto gira hacia la derecha
+        <br>
+           <b>A</b> El auto avanza donde este esté apuntando
+        <hr>
+        Ejemplo de las instrucciones:
+        <br>
+        <b>5,5 1,2N IAIAIAIAA</b></p>
+      </div>
+      <label for="tam-tabla">Tamaño de la Tabla:</label>
+      <input type="number" id="tam-tabla" />
+      <label for="posicion-ini">Posición inicial:</label>
+      <input type="number" id="posicion-ini" />
+      <label for="comandos-input">Comandos:</label>
+      <input type="number" id="comandos-input" />
+      <input type="submit" value="Go!" id="go-button" />
     </form>
     <div id="resultado-div"></div>
-
     <script type="module" src="./src/presenter.js"></script>
-  </body>
+    </body>
 </html>
+
+  
+
