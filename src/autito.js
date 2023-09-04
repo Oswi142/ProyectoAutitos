@@ -38,3 +38,5 @@ class Autito{
         return comando;
     }
 }
+
+export default Autito;
