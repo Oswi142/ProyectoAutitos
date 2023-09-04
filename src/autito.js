@@ -30,4 +30,11 @@ class Autito{
         alert("Valores erroneos");
         }
     }
+
+    definirPosIni(comando)
+    {
+        let cadena = comando.toString().split(',');
+        this.asignarValores(cadena);
+        return comando;
+    }
 }
