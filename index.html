@@ -4,36 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Autitos</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+  </style>
 </head>
-    <body>
-    <h1>AUTITOS🚗</h1>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">🏁AUTITOS🏁</h1>
     <form id="autito-form">
-      <div>
-        <p>Ingrese las instrucciones de la sigueinte manera<br>
-           Tamaño de la matriz / Posicion Inicial en X, Posicion Inicial Y y la Dirección / Comandos 
-        <br>
-           <b>I</b> El auto gira hacia la izquierda
-        <br>
-           <b>D</b> El auto gira hacia la derecha
-        <br>
-           <b>A</b> El auto avanza donde este esté apuntando
+      <div class="alert alert-info">
+        <p>Ingrese las instrucciones de la siguiente manera:</p>
+        <ul>
+          <li>Tamaño de la matriz / Posición Inicial en X, Posición Inicial Y y la Dirección / Comandos</li>
+          <li><b>I</b> El auto gira hacia la izquierda</li>
+          <li><b>D</b> El auto gira hacia la derecha</li>
+          <li><b>A</b> El auto avanza en la dirección en la que está apuntando</li>
+        </ul>
         <hr>
-        Ejemplo de las instrucciones:
-        <br>
-        <b>5,5 1,2N IAIAIAIAA</b></p>
+        <p>Ejemplo de instrucciones: <b>5,5 1,2N IAIAIAIAA</b></p>
       </div>
-      <label for="tam-tabla">Tamaño de la Tabla:</label>
-      <input type="number" id="tam-tabla" />
-      <label for="posicion-ini">Posición inicial:</label>
-      <input type="number" id="posicion-ini" />
-      <label for="comandos-input">Comandos:</label>
-      <input type="number" id="comandos-input" />
-      <input type="submit" value="Go!" id="go-button" />
+      <div class="form-group">
+        <label for="tam-tabla">Tamaño de la Tabla:</label>
+        <input type="number" class="form-control" id="tam-tabla" required>
+      </div>
+      <div class="form-group">
+        <label for="posicion-ini">Posición inicial:</label>
+        <input type="number" class="form-control" id="posicion-ini" required>
+      </div>
+      <div class="form-group">
+        <label for="comandos-input">Comandos:</label>
+        <input type="text" class="form-control" id="comandos-input" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Go!</button>
     </form>
-    <div id="resultado-div"></div>
-    <script type="module" src="./src/presenter.js"></script>
-    </body>
+    <div id="resultado-div" class="mt-4"></div>
+  </div>
+  <script type="module" src="./src/presenter.js"></script>
+</body>
 </html>
-
-  
-
