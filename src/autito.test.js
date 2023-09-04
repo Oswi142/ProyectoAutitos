@@ -12,4 +12,10 @@ describe('Autito', () => {
     expect(autito.y).toBe(0);
     expect(autito.direc).toBe('N');
   });
+
+  it('debería generar una matriz de tamaño correcto al llamar generarTablero', () => {
+    autito.generarTablero(5, 5);
+    expect(autito.filas).toBe(5);
+    expect(autito.columnas).toBe(5);
+  });
 });
