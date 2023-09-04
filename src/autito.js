@@ -17,19 +17,17 @@ class Autito{
         }
     }
     
-    asignarValores(cadena)
+    asignarValores(cadena) 
     {
-        try
-        {
-        this.x = +cadena[0];
-        this.y = +cadena[1][0];
-        this.direccion = cadena[1][1];
+        try {
+          const valores = cadena.split(',');
+          this.x = +valores[0];
+          this.y = +valores[1];
+          this.direccion = valores[2];
+        } catch {
+          alert("Valores erroneos");
         }
-        catch
-        {
-        alert("Valores erroneos");
-        }
-    }
+      }
 
     definirPosIni(comando)
     {
