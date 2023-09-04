@@ -16,4 +16,18 @@ class Autito{
             this.matriz[i] = new Array(columnas);
         }
     }
+    
+    asignarValores(cadena)
+    {
+        try
+        {
+        this.x = +cadena[0];
+        this.y = +cadena[1][0];
+        this.direccion = cadena[1][1];
+        }
+        catch
+        {
+        alert("Valores erroneos");
+        }
+    }
 }
